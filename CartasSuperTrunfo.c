@@ -11,8 +11,10 @@ struct Carta {
     char codigo[MAX_CODIGO];
     char cidade[MAX_CIDADE];
     int populacao;
+    float densidade populacional    
     float area;
     float pib;
+    float pib per capita;
     int pontos_turisticos;
 };
 
@@ -93,7 +95,21 @@ void lerCarta(struct Carta *carta, int numero_carta) {
     // Ler número de pontos turísticos
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &carta->pontos_turisticos);
-    
+
+    // Ler número da densidade populacional
+    printf("Número da densidade populacional: ");
+    scanf("%f", &carta-> densidade populacional);
+
+    printf(media da densidade populacional: ");
+    scanf("%f", &pib / &populacao);    
+
+    //Ler número do PIB per capita
+    printf("Número do PIB per capita: ");
+    scanf(%f, &carta-> PIB per capita);
+
+    printf(numero pib PIB per capita: ");
+    scanf("%f", &PIB / &populacao);
+   
     limparBuffer(); // Limpar buffer após o último scanf
 }
 
